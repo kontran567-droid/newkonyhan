@@ -1,0 +1,30 @@
+/* style.css */
+:root {
+    --primary-color: #3b82f6;
+    --bg-color: #f8fafc;
+    --text-color: #1f2937;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.nav-btn {
+    transition: all 0.2s;
+}
+
+.nav-btn:hover {
+    transform: translateX(8px);
+}
+
+#app {
+    background: var(--bg-color);
+}
+
+button, input {
+    transition: all 0.2s;
+}
+
+/* ทำให้ Tailwind รู้จัก var */
+.bg-primary { background-color: var(--primary-color) !important; }
+.text-primary { color: var(--primary-color) !important; }
